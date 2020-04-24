@@ -11,7 +11,7 @@
     // Crea un ítem en la preferencia
     $item = new MercadoPago\Item();
     $item->id = 1234;
-    $image_url = 'https://nehemiasnn-mp-commerce-php.herokuapp.com/' . trim($_POST['img'], '.');
+    $image_url = $_POST['img'];
     $item->picture_url = $image_url;
     $item->title = $_POST['title'];
     $item->description = "Dispositivo móvil de Tienda e-commerce";
