@@ -1,7 +1,5 @@
 <?php 
 
-header("HTTP/1.1 200 OK");
-echo 'hola'; die;
 require __DIR__  . '/vendor/autoload.php';
 
 MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
