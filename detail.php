@@ -11,7 +11,7 @@
     // Crea un ítem en la preferencia
     $item = new MercadoPago\Item();
     $item->id = 1234;
-    $image_url = 'https://msbombieri-mp-ecommerce-php.herokuapp.com/' . trim($_POST['img'], '.');
+    $image_url = 'https://nehemiasnn-mp-ecommerce-php.herokuapp.com/' . trim($_POST['img'], '.');
     $item->picture_url = $image_url;
     $item->title = $_POST['title'];
     $item->description = "Dispositivo móvil de Tienda e-commerce";
@@ -21,7 +21,7 @@
     $payer = new MercadoPago\Payer();
     $payer->name = "Lalo";
     $payer->surname = "Landa";
-    $payer->email = "test_user_63274575@testuser.com";
+    $payer->email = "test_user_97555375@testuser.com";
     // $payer->date_created = "2018-06-02T12:58:41.425-04:00";
     $payer->phone = array(
       "area_code" => "011",
@@ -42,12 +42,12 @@
     $preference->payer = $payer;
     $preference->external_reference = "ABCD1234";
     $preference->back_urls = array(
-        "success" => "https://msbombieri-mp-ecommerce-php.herokuapp.com/success",
-        "failure" => "https://msbombieri-mp-ecommerce-php.herokuapp.com/failure",
-        "pending" => "https://msbombieri-mp-ecommerce-php.herokuapp.com/pending"
+        "success" => "https://nehemiasnn-mp-ecommerce-php.herokuapp.com/success",
+        "failure" => "https://nehemiasnn-mp-ecommerce-php.herokuapp.com/failure",
+        "pending" => "https://nehemiasnn-mp-ecommerce-php.herokuapp.com/pending"
     );
     $preference->auto_return = "approved";
-    $preference->notification_url = "https://msbombieri-mp-ecommerce-php.herokuapp.com/ipn.php";
+    $preference->notification_url = "https://nehemiasnn-mp-ecommerce-php.herokuapp.com/ipn.php";
 
     $preference->payment_methods = array(
         "excluded_payment_types" => array(
