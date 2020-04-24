@@ -21,7 +21,7 @@
     $payer = new MercadoPago\Payer();
     $payer->name = "Lalo";
     $payer->surname = "Landa";
-    $payer->email = "test_user_97555375@testuser.com";
+    $payer->email = "test_user_63274575@testuser.com";
     // $payer->date_created = "2018-06-02T12:58:41.425-04:00";
     $payer->phone = array(
       "area_code" => "011",
