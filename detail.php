@@ -9,7 +9,8 @@
     $preference = new MercadoPago\Preference();
 
     $payer = new MercadoPago\Payer();
-    $payer->name = "Lalo Landa";
+    $payer->name = "Lalo";
+    $payer->surname = "Landa";
     $payer->email = "test_user_63274575@testuser.com";
     $payer->phone = array(
         "area_code" => "011",
@@ -51,15 +52,13 @@
         "installments" => 6
     );
 
-    $image_url = 'https://nehemiasnn-mp-commerce-php.herokuapp.com/' . trim($_POST['img'], '.');
-
     // Crea un ítem en la preferencia
     $item = new MercadoPago\Item();
     $item->id = 1234;
     $item->title = $_POST['title'];
     $item->quantity = $_POST['unit'];
     $item->unit_price = $_POST['price'];
-    $item->picture_url = $image_url;
+    $item->picture_url = 'https://nehemiasnn-mp-commerce-php.herokuapp.com/' . trim($_POST['img'], '.');
     $preference->items = array($item);
 
     $preference->save();

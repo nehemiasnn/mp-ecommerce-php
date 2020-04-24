@@ -3,7 +3,7 @@
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
-$access_token = 'APP_USR-38157608410175-042418-74797596b8c0a3c8ef4bca4cce234480-469485398';
+$access_token = 'APP_USR-2849871411917254-042418-66b72096a4f71a526d5d75183aec5714-469485398';
 $payment_id = $_POST["payment_id"];
 
 $cURLConnection = curl_init();
