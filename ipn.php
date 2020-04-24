@@ -1,5 +1,7 @@
 <?php 
 
+header("HTTP/1.1 200 OK");
+echo 'hola'; die;
 require __DIR__  . '/vendor/autoload.php';
 
 MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
@@ -10,7 +12,7 @@ switch($_POST["type"]) {
         if($payment){
             header("HTTP/1.1 200 OK");
         } else {
-            header("HTTP/1.1 201 ERROR");
+            header("HTTP/1.1 404 ERROR");
         }
         break;
     case "plan":
@@ -18,7 +20,7 @@ switch($_POST["type"]) {
         if($plan){
             header("HTTP/1.1 200 OK");
         } else {
-            header("HTTP/1.1 201 ERROR");
+            header("HTTP/1.1 404 ERROR");
         }
         break;
     case "subscription":
@@ -26,7 +28,7 @@ switch($_POST["type"]) {
         if($plan){
             header("HTTP/1.1 200 OK");
         } else {
-            header("HTTP/1.1 201 ERROR");
+            header("HTTP/1.1 404 ERROR");
         }
         break;
     case "invoice":
@@ -34,7 +36,7 @@ switch($_POST["type"]) {
         if($plan){
             header("HTTP/1.1 200 OK");
         } else {
-            header("HTTP/1.1 201 ERROR");
+            header("HTTP/1.1 404 ERROR");
         }
         break;
 }
