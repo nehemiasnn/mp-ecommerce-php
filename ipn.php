@@ -1,7 +1,7 @@
 <?php
 
 
-header("HTTP/1.1 400 NOT_OK");
+header("HTTP/1.1 200 OK");
 exit; 
 
 // SDK de Mercado Pago
