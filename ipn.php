@@ -1,5 +1,9 @@
 <?php
 
+
+header("HTTP/1.1 200 OK");
+exit; 
+
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
